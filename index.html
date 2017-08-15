@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Loren's Crystal Collector Game</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets\css\reset.css">
 	<link rel="stylesheet" type="text/css" href="assets\css\style.css">
@@ -19,16 +20,25 @@
 			<br><br>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number. 
 			<br><br>The value of each crystal is hidden from you until you click on it. 
 			<br><br>Each time when the game starts, the game will change the values of each crystal.</p>
+			<br><br>
+			<button id="random-button" class="btn btn-default btn-lg"><h1>Start</h1></button>
 		</div>
 		<br>
 			<div>
-				<div id="randomNumber">random number</div>
+				<div id="randomNumber"></div>
 				<div id="winsLosses">wins/losses</div>
 			</div>
 			<br>
-				<div id="crystalImgs">crystal images</div>
+				<div id="crystalImgs">
+					<img src="assets\images\blue-crystal.png" class="crystal-image" height="75" width="75">
+					<img src="assets\images\green-crystal.png" class="crystal-image" height="75" width="75">
+					<img src="assets\images\purple-crystal.png" class="crystal-image" height="75" width="75">
+					<img src="assets\images\red-crystal.png" class="crystal-image" height="75" width="75">
+				</div>
 				<br><div id="score">Total score box</div>
 </div>
 
+
+<script type="text/javascript"></script>
 </body>
-</html></html>
+</html>
